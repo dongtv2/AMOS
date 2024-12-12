@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns"><Pages collapsible-pages="no" drawer-with-page="yes"><Page page-color="250 250 250" page-drawer="Rule" page-infullview="yes" page-name="Rule" page-width="2560"><PageBlocks>
+
+<Block genus-name="gte_number" id="1"><Location><X>334</X><Y>131</Y></Location><Plug>
+	<BlockConnector con-block-id="2" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="3" connector-kind="socket" connector-type="number" init-type="number" label="left value" position-type="single"/>
+	<BlockConnector con-block-id="4" connector-kind="socket" connector-type="number" init-type="number" label="right value" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.dates.MinuteInt_MinuteInt" id="4"><Location><X>438</X><Y>155</Y></Location><Plug>
+	<BlockConnector con-block-id="1" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="5" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="returnstring" id="5"><Label>180</Label><Location><X>520</X><Y>155</Y></Location><Plug>
+	<BlockConnector con-block-id="4" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.elements.LineMaintenanceRuleElement_G/T Duration" id="3"><Location><X>438</X><Y>131</Y></Location><Plug>
+	<BlockConnector con-block-id="1" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="lte_number" id="6"><Location><X>334</X><Y>83</Y></Location><Plug>
+	<BlockConnector con-block-id="2" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="7" connector-kind="socket" connector-type="number" init-type="number" label="left value" position-type="single"/>
+	<BlockConnector con-block-id="8" connector-kind="socket" connector-type="number" init-type="number" label="right value" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.dates.MinuteInt_MinuteInt" id="8"><Location><X>438</X><Y>107</Y></Location><Plug>
+	<BlockConnector con-block-id="6" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="9" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="returnstring" id="9"><Label>1440</Label><Location><X>520</X><Y>107</Y></Location><Plug>
+	<BlockConnector con-block-id="8" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.elements.LineMaintenanceRuleElement_G/T Duration" id="7"><Location><X>438</X><Y>83</Y></Location><Plug>
+	<BlockConnector con-block-id="6" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="and" id="2"><Location><X>284</X><Y>83</Y></Location><Plug>
+	<BlockConnector con-block-id="10" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="6" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+	<BlockConnector con-block-id="1" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.selectable.bool.SelectableWPExistRuleElement_W/P exists" id="11"><Location><X>374</X><Y>59</Y></Location><Plug>
+	<BlockConnector con-block-id="12" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="13" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.ConstantGenericElement_Previous Auto-Generated W/P of the G/T" id="13"><Location><X>464</X><Y>59</Y></Location><Plug>
+	<BlockConnector con-block-id="11" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="not" id="12"><Location><X>326</X><Y>59</Y></Location><Plug>
+	<BlockConnector con-block-id="14" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="11" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.selectable.bool.SelectableWPExistRuleElement_W/P exists" id="15"><Location><X>374</X><Y>35</Y></Location><Plug>
+	<BlockConnector con-block-id="16" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="17" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.ConstantGenericElement_First Manually Created W/P of the G/T" id="17"><Location><X>464</X><Y>35</Y></Location><Plug>
+	<BlockConnector con-block-id="15" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.groundtime.LandingStationMultipleRuleElement_G/T Station is in" id="18"><Location><X>234</X><Y>11</Y></Location><Plug>
+	<BlockConnector con-block-id="19" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="20" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.groundtime.LandingStationMultipleRuleElement$1_select a station..." id="20"><Label>#ELT#HAN#ELT#SGN</Label><Location><X>352</X><Y>11</Y></Location><Plug>
+	<BlockConnector con-block-id="18" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="or" id="14"><Location><X>284</X><Y>35</Y></Location><Plug>
+	<BlockConnector con-block-id="10" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="16" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+	<BlockConnector con-block-id="12" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="not" id="16"><Location><X>326</X><Y>35</Y></Location><Plug>
+	<BlockConnector con-block-id="14" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="15" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="rule" id="21"><Label>Rule Output1</Label><Location><X>18</X><Y>8</Y></Location>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="22" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="ifthenelse" id="22"><Location><X>116</X><Y>8</Y></Location><Plug>
+	<BlockConnector con-block-id="21" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="3">
+	<BlockConnector con-block-id="19" connector-kind="socket" connector-type="boolean" init-type="boolean" label="if" position-type="single"/>
+	<BlockConnector con-block-id="23" connector-kind="socket" connector-type="return-value" init-type="return-value" label="then" position-type="single"/>
+	<BlockConnector con-block-id="24" connector-kind="socket" connector-type="return-value" init-type="return-value" label="else" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.NotApplicableRuleElement_Rule Not Applicable" id="24"><Location><X>184</X><Y>299</Y></Location><Plug>
+	<BlockConnector con-block-id="22" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPGenerateAdvancedRuleElement_Generate W/P" id="23"><Location><X>184</X><Y>179</Y></Location><Plug>
+	<BlockConnector con-block-id="22" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="25" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPUpdateRuleElement_Update" id="25"><Location><X>292</X><Y>179</Y></Location><Plug>
+	<BlockConnector con-block-id="23" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="26" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/>
+	<BlockConnector con-block-id="27" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPUpdateRuleElement_Update" id="27"><Location><X>362</X><Y>227</Y></Location><Plug>
+	<BlockConnector con-block-id="25" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="28" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/>
+	<BlockConnector con-block-id="29" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPUpdateClassificationElement_Classification" id="29"><Location><X>432</X><Y>275</Y></Location><Plug>
+	<BlockConnector con-block-id="27" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="30" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.ConstantGenericElement_Line Maintenance" id="30"><Location><X>540</X><Y>275</Y></Location><Plug>
+	<BlockConnector con-block-id="29" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPUpdateFieldFunctionRuleElement_End Date" id="28"><Location><X>432</X><Y>227</Y></Location><Plug>
+	<BlockConnector con-block-id="27" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="31" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.dates.AddMinuteString_Add Min." id="31"><Location><X>514</X><Y>227</Y></Location><Plug>
+	<BlockConnector con-block-id="28" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="32" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/>
+	<BlockConnector con-block-id="33" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="returnstring" id="33"><Label>-5</Label><Location><X>592</X><Y>251</Y></Location><Plug>
+	<BlockConnector con-block-id="31" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.elements.LineMaintenanceRuleElement_G/T End Date" id="32"><Location><X>592</X><Y>227</Y></Location><Plug>
+	<BlockConnector con-block-id="31" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.workpackage.WPUpdateFieldFunctionRuleElement_Start Date" id="26"><Location><X>362</X><Y>179</Y></Location><Plug>
+	<BlockConnector con-block-id="25" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="1">
+	<BlockConnector con-block-id="34" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="amos.share.system.ruleengine.libs.commons.dates.AddMinuteString_Add Min." id="34"><Location><X>450</X><Y>179</Y></Location><Plug>
+	<BlockConnector con-block-id="26" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="35" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/>
+	<BlockConnector con-block-id="36" connector-kind="socket" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="returnstring" id="36"><Label>5</Label><Location><X>528</X><Y>203</Y></Location><Plug>
+	<BlockConnector con-block-id="34" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="amos.share.planning.linemaintenance.rule.elements.LineMaintenanceRuleElement_G/T Start Date" id="35"><Location><X>528</X><Y>179</Y></Location><Plug>
+	<BlockConnector con-block-id="34" connector-kind="plug" connector-type="return-value" init-type="return-value" label="" position-type="single"/></Plug>
+</Block>
+<Block genus-name="and" id="19"><Location><X>184</X><Y>11</Y></Location><Plug>
+	<BlockConnector con-block-id="22" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="18" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+	<BlockConnector con-block-id="10" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+<Block genus-name="and" id="10"><Location><X>234</X><Y>35</Y></Location><Plug>
+	<BlockConnector con-block-id="19" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Plug>
+	<Sockets num-sockets="2">
+	<BlockConnector con-block-id="14" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+	<BlockConnector con-block-id="2" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/></Sockets>
+</Block>
+
+</PageBlocks></Page></Pages></cb:CODEBLOCKS>

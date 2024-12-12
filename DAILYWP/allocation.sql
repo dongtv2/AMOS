@@ -95,7 +95,7 @@ UNION
 
 
 
-SSELECT 
+SELECT 
        ac_future_flights.legno_i,
        ac_future_flights.ac_registr AS "REG",
 
